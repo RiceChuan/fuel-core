@@ -473,7 +473,7 @@ where
     }
 
     /// RocksDB prefix iteration doesn't support reverse order,
-    /// so we need to to force the RocksDB iterator to order
+    /// so we need to force the RocksDB iterator to order
     /// all the prefix in the iterator so that we can take the next prefix
     /// as start of iterator and iterate in reverse.
     fn reverse_prefix_iter<T>(
